@@ -1,0 +1,5 @@
+git --version = verifica a versão do Git
+git init = inicia um repositório vazio na pasta atual
+git config --global user.name = "Carlos Williamy" = Cria o usuário do Git
+git config --global email= "carloswilliamylourenco@gmail.com" = Cria o email do Git
+git status = Verifica tudo que não foi salvo (Não comitados)

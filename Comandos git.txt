@@ -3,3 +3,8 @@ git init = inicia um repositório vazio na pasta atual
 git config --global user.name = "Carlos Williamy" = Cria o usuário do Git
 git config --global email= "carloswilliamylourenco@gmail.com" = Cria o email do Git
 git status = Verifica tudo que não foi salvo (Não comitados)
+git add . = Envia os arquivos para a área de transferência
+git commit -m "Arquivo com comandos do GIT"
+git log = Mostra todos os logs dos commits realizados
+git remote add origin linkdorepositorio = Vinculo a pasta loxal ao repositório do git https://github.com/carloswilliamy/topicosespeciais.git
+git push -u origin master = Faz o primeiro commit

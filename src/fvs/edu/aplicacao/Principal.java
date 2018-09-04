@@ -12,13 +12,12 @@ public class Principal {
 		
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("topicos-fvs");
 		EntityManager em = emf.createEntityManager();
-		em.getTransaction().begin();
-		Aluno aluno = new Aluno(null, "Carlos Williamy", "072.290.823-74", "arrozfeijao", 9558);
-		em.persist(aluno);
-		em.getTransaction().commit();
-		System.out.println("Salvo com sucesso!");
-		
-
+		Aluno aluno = em.find(Aluno.class,1);
+		System.out.println(aluno);
+		//em.getTransaction().begin();
+		//Aluno aluno = new Aluno(null, "Carlos Williamy", "072.290.823-74", "arrozfeijao", 9558);
+		//em.persist(aluno);
+		//em.getTransaction().commit();
 	}
 
 }

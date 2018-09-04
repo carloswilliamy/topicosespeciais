@@ -1,10 +1,10 @@
-git --version = verifica a versão do Git
-git init = inicia um repositório vazio na pasta atual
-git config --global user.name = "Carlos Williamy" = Cria o usuário do Git
-git config --global email= "carloswilliamylourenco@gmail.com" = Cria o email do Git
-git status = Verifica tudo que não foi salvo (Não comitados)
-git add . = Envia os arquivos para a área de transferência
-git commit -m "Arquivo com comandos do GIT"
-git log = Mostra todos os logs dos commits realizados
-git remote add origin linkdorepositorio = Vinculo a pasta loxal ao repositório do git https://github.com/carloswilliamy/topicosespeciais.git
-git push -u origin master = Faz o primeiro commit
+git --version (Verifica a versão do git)
+git init (Inicia um repositório vazio na pasta atual)
+git config --global user.name "Karlos Oliveira" (Cria usuário do git)
+git config --global user.email "karlos.1914.so@gmail.com" (Cria email do git)
+git status (Verifica tudo que não foi salvo)
+git add . (Coloca os arquivos na área de transferência)
+git commit -m "Mensagem" (Informa uma mensagem para identificar o cmmmit)
+git log (Mostra todo o log dos commits realizados)
+git remote add origin linkdorepositorio (Vincula a pasta local ai repositório do git)
+git push -u origin master (Manda os arquivos para a nuvem)

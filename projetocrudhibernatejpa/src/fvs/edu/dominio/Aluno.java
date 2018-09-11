@@ -19,9 +19,8 @@ public class Aluno implements Serializable{
 	private String rg;
 	private Integer matricula;
 	
-	public Aluno() {
-		
-	}
+	public Aluno() {}
+	
 	public Aluno(Integer id, String nome, String cpf, String rg, Integer matricula) {
 		super();
 		this.id = id;

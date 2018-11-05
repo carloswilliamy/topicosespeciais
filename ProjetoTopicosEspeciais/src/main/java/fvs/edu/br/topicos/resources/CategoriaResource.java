@@ -18,8 +18,11 @@ public class CategoriaResource {
 	private CategoriaService service;
 	
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
-	public ResponseEntity<?> listar(@PathVariable Integer id){
+	public ResponseEntity<?> listar(@PathVariable Integer id) {
 		Categoria obj = service.buscar(id);
+		
 		return ResponseEntity.ok().body(obj);
+		
 	}
+	
 }

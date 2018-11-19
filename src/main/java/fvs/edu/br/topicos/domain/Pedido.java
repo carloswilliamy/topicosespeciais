@@ -43,9 +43,9 @@ public class Pedido implements Serializable{
 	@OneToOne(cascade=CascadeType.ALL, mappedBy="pedido")
 	private Pagamento pagamento;
 	
-	public Pedido() {
-		
-	}
+	
+	public Pedido() {}
+
 
 	public Pedido(Integer id, Date instante, Cliente cliente, Endereco enderecoEntrega) {
 		super();
@@ -55,53 +55,66 @@ public class Pedido implements Serializable{
 		this.enderecoEntrega = enderecoEntrega;
 	}
 
+
 	public Integer getId() {
 		return id;
 	}
+
 
 	public void setId(Integer id) {
 		this.id = id;
 	}
 
+
 	public Date getInstante() {
 		return instante;
 	}
+
 
 	public void setInstante(Date instante) {
 		this.instante = instante;
 	}
 
+
 	public Cliente getCliente() {
 		return cliente;
 	}
+
 
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
 
+
 	public Endereco getEnderecoEntrega() {
 		return enderecoEntrega;
 	}
+
 
 	public void setEnderecoEntrega(Endereco enderecoEntrega) {
 		this.enderecoEntrega = enderecoEntrega;
 	}
 
+
 	public Set<ItemPedido> getItens() {
 		return itens;
 	}
+
 
 	public void setItens(Set<ItemPedido> itens) {
 		this.itens = itens;
 	}
 
+
 	public Pagamento getPagamento() {
 		return pagamento;
 	}
 
+
 	public void setPagamento(Pagamento pagamento) {
 		this.pagamento = pagamento;
 	}
+
 
 	@Override
 	public int hashCode() {
@@ -110,6 +123,7 @@ public class Pedido implements Serializable{
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {
@@ -127,19 +141,5 @@ public class Pedido implements Serializable{
 			return false;
 		return true;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
